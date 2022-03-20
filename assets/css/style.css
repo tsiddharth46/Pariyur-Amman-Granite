@@ -43,7 +43,7 @@ body {
     color: #999;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #292929;
+    background-color: #fff;
 }
 p {
     font-family: 'Rambla', sans-serif;
@@ -64,7 +64,6 @@ a {
     color: inherit;
 }
 
-span:hover,
 a:hover {
     text-decoration: none;
     color: #c5a47e;
@@ -97,14 +96,14 @@ h3,
 h4,
 h5,
 h6 {
-    color: #fff;
+    color: #c5a47e;
     font-weight: 400;
     font-family: 'Teko', sans-serif;
 }
 .title {
     font-size: 60px;
     margin-bottom: 20px;
-    color: #fff;
+    color: #c5a47e;
     word-spacing: 3px;
     text-transform: uppercase;
 }
@@ -240,17 +239,12 @@ h6 {
     margin-left: -570px;
     top: 0;
     height: 100%;
-    border-left: 1px solid #323232;
-    border-right: 1px solid #323232;
-    border-bottom: 1px solid #323232;
 }
 .content-lines {
     position: absolute;
     left: 33.666666%;
     right: 33.666666%;
     height: 100%;
-    border-left: 1px solid #323232;
-    border-right: 1px solid #323232;
 }
 
 
@@ -355,19 +349,32 @@ h6 {
     background-size: cover;
     background-position: 50% 0% !important;
 }
-.services .item:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(12, 12, 12, 0.5);
+.services .item img {
+    width: 100%;
+    cursor: pointer;
 }
+.services .item .view-more {
+    position: absolute;
+    bottom: 129px;
+    padding-left: 128px;
+    padding-right: 128px;
+    background-color: #c5a47e;
+    color: #fff;
+    opacity: 0;
+    cursor: pointer;
+}
+.services .item:hover .view-more {
+    opacity: 1;
+    transition: opacity .5s, transform .3s, max-height .6s, filter .6s;
+    -webkit-transition: opacity .5s, transform .3s, max-height .6s, filter .6s;
+    -moz-transition: opacity .5s, transform .3s, max-height .6s, filter .6s;
+    -o-transition: opacity .5s, transform .3s, max-height .6s, filter .6s;
+    -ms-transition: opacity .5s, transform .3s, max-height .6s, filter .6s;
+}
+
 .services .item:hover:after {
     opacity: 0;
 }
-.services .item:hover h5,
 .services .item:hover p,
 .services .item:hover h5 .services .item:hover span {
     color: #fff;
@@ -376,20 +383,22 @@ h6 {
     -webkit-text-stroke: 1px #fff
 }
 .services .item:after {
-    content: "";
+    /* content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: #292929;
+    background: #efefef;
     z-index: 1;
     -webkit-transition: all .4s;
-    transition: all .4s;
+    transition: all .4s; */
 }
 .services .item .con {
     position: relative;
     z-index: 7;
+    margin-top: 20px;
+    text-align: center;
 }
 .services .item h5 {
     font-size: 40px;
@@ -409,15 +418,7 @@ h6 {
 .services .item p {
     font-size: 15px;
 }
-.services .bg-1 {
-    background-image: url(../img/blog/5.jpg);
-}
-.services .bg-2 {
-    background-image: url(../img/blog/5.jpg);
-}
-.services .bg-3 {
-    background-image: url(../img/blog/5.jpg);
-}
+
 
 
 /* =======  About  ======= */
@@ -426,6 +427,7 @@ h6 {
 }
 .about .image .img {
     position: relative;
+    border: 5px solid #c5a47e;
 }
 .about .image .img .vid {
     position: absolute;
@@ -639,9 +641,10 @@ h6 {
 .team {
   padding-bottom: 90px;
 }
-.team .item:hover .info {
-  top: 0;
-  opacity: 1;
+.team .item:hover .team-img {
+ -webkit-transform: scale(1.1, 1.1);
+ transform: scale(1.1, 1.1);
+ transition: all .4s;
 }
 .team .item .team-img {
   width: 270px;
@@ -650,18 +653,7 @@ h6 {
   margin: 0 auto 20px;
   position: relative;
 }
-.team .item .info {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(197, 164, 126, 0.8);
-  color: #fff;
-  opacity: 0;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
+.team .item 
 .team .item h6 {
   margin-bottom: 0px;
   font-size: 25px;
@@ -872,6 +864,9 @@ h6 {
     position: relative;
     margin-bottom: 20px;
 }
+.post .item .post-img img{ 
+    height: 262px;
+}
 .post .item .post-img:hover .img {
     -webkit-transform: scale(1.1, 1.1);
     transform: scale(1.1, 1.1);
@@ -1039,7 +1034,7 @@ h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #292929;
+    background: #efefef;
     z-index: 1;
     -webkit-transition: all .4s;
     transition: all .4s;
@@ -1092,7 +1087,7 @@ h6 {
     width: 100%;
     padding: 10px 20px;
     border: 0;
-    background-color: #323232;
+    background-color: #efefef;
     font-weight: 400;
     border-radius: 4px;
 }
@@ -1155,10 +1150,6 @@ button, input, textarea {
 
 
 /* ======= Footer  ======= */
-footer {
-    padding: 60px 0;
-    border-top: 1px solid #323232;
-}
 footer p {
     color: #999;
     font-size: 12px;
