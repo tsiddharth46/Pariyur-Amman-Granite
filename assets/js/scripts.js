@@ -60,52 +60,52 @@ $(function () {
         , autoplay: true
         , smartSpeed: 500
     });
-    
+
     // Clients owlCarousel
     $('.clients .owl-carousel').owlCarousel({
-        loop:true,
+        loop: true,
         margin: 60,
-        mouseDrag:true,
-        autoplay:true,
+        mouseDrag: true,
+        autoplay: true,
         dots: false,
-        responsiveClass:true,
-        responsive:{
-            0:{
+        responsiveClass: true,
+        responsive: {
+            0: {
                 margin: 10,
-                items:2
+                items: 2
             },
-            600:{
-                items:3
+            600: {
+                items: 3
             },
-            1000:{
-                items:5
+            1000: {
+                items: 5
             }
         }
     });
-    
+
     // Team owlCarousel
     $('.team .owl-carousel').owlCarousel({
         loop: true,
         margin: 0,
         autoplay: true,
         dots: false,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
-                autoplay:true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                autoplay: true,
             },
-            600:{
-                items:2,
-                autoplay:true,
+            600: {
+                items: 2,
+                autoplay: true,
             },
-            1000:{
-                items:3,
-                autoplay:false,
+            1000: {
+                items: 3,
+                autoplay: false,
             }
         }
     });
-    
+
     // Project owlCarousel
     $('.projects .owl-carousel').owlCarousel({
         loop: true
@@ -117,7 +117,8 @@ $(function () {
         , responsive: {
             0: {
                 items: 1
-            , }
+                ,
+            }
             , 600: {
                 items: 2
             }
@@ -126,7 +127,7 @@ $(function () {
             }
         }
     });
-    
+
     // Testimonials owlCarousel
     $('.testimonials .owl-carousel').owlCarousel({
         loop: true
@@ -138,7 +139,8 @@ $(function () {
         , responsive: {
             0: {
                 items: 1
-            , }
+                ,
+            }
             , 600: {
                 items: 1
             }
@@ -147,7 +149,7 @@ $(function () {
             }
         }
     });
-    
+
     // YouTubePopUp
     $("a.vid").YouTubePopUp();
 });
@@ -156,8 +158,8 @@ $(window).on("load", function () {
     var wind = $(window);
     // Preloader
     setTimeout(function () {
-            $("#loader").fadeOut(200);
-        }, 200);
+        $("#loader").fadeOut(200);
+    }, 200);
     // stellar
     wind.stellar();
     // contact form validator
@@ -219,4 +221,13 @@ $(document).ready(function () {
         $('.owl-item').not('.cloned').eq(item).find('p').addClass('animated fadeInUp');
         $('.owl-item').not('.cloned').eq(item).find('.btn').addClass('animated zoomIn');
     });
+    var elem = $('#_' + window.location.hash.replace('#', ''));
+    if(elem) {
+         $.scrollTo(elem.left, elem.top);
+    }
 });
+(function () {
+    var year = document.getElementById('year');
+    year.innerHTML = new Date().getFullYear();
+
+})();

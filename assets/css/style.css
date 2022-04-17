@@ -354,22 +354,22 @@ h6 {
     cursor: pointer;
 }
 .services .item .view-more {
-    position: absolute;
-    bottom: 129px;
-    padding-left: 128px;
-    padding-right: 128px;
-    background-color: #c5a47e;
+    bottom: 50px;
     color: #fff;
     opacity: 0;
     cursor: pointer;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    padding: 10px 0;
 }
 .services .item:hover .view-more {
     opacity: 1;
-    transition: opacity .5s, transform .3s, max-height .6s, filter .6s;
-    -webkit-transition: opacity .5s, transform .3s, max-height .6s, filter .6s;
-    -moz-transition: opacity .5s, transform .3s, max-height .6s, filter .6s;
-    -o-transition: opacity .5s, transform .3s, max-height .6s, filter .6s;
-    -ms-transition: opacity .5s, transform .3s, max-height .6s, filter .6s;
 }
 
 .services .item:hover:after {
@@ -382,22 +382,9 @@ h6 {
 .services .item:hover .numb {
     -webkit-text-stroke: 1px #fff
 }
-.services .item:after {
-    /* content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #efefef;
-    z-index: 1;
-    -webkit-transition: all .4s;
-    transition: all .4s; */
-}
 .services .item .con {
     position: relative;
     z-index: 7;
-    margin-top: 20px;
     text-align: center;
 }
 .services .item h5 {
@@ -460,7 +447,6 @@ h6 {
     -webkit-transition: all .5s;
     transition: all .5s;
 }
-.about .image .img img {}
 .about .numb {
     font-size: 200px;
     line-height: 200px;
@@ -642,8 +628,8 @@ h6 {
   padding-bottom: 90px;
 }
 .team .item:hover .team-img {
- -webkit-transform: scale(1.1, 1.1);
- transform: scale(1.1, 1.1);
+ -webkit-transform: scale(1.05, 1.05);
+ transform: scale(1.05, 1.05);
  transition: all .4s;
 }
 .team .item .team-img {
@@ -877,6 +863,7 @@ h6 {
 }
 .post .item .cont {
     padding: 0;
+    margin-top: 30px;
 }
 .post .item .cont h6 {
     font-size: 24px;

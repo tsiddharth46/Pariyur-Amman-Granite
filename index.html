@@ -50,11 +50,11 @@
             <!-- Navigation menu -->
             <nav class="togo-menu-fixed">
                 <ul>
-                    <li><a href="index.html#home" data-scroll-nav="0">Home</a></li>
-                    <li><a href="index-2.html#about" data-scroll-nav="2">About Us</a></li>
-                    <li><a href="index.html#services" data-scroll-nav="1">Services</a></li>        
-                    <li><a href="index.html#projects" data-scroll-nav="3">Products</a></li>
-                    <li><a href="index.html#contact" data-scroll-nav="4">Contact</a></li>
+                    <li><a href="#home" data-scroll-nav="0">Home</a></li>
+                    <li><a href="#about" data-scroll-nav="2">About Us</a></li>
+                    <li><a href="#services" data-scroll-nav="1">Services</a></li>        
+                    <li><a href="#projects" data-scroll-nav="3">Products</a></li>
+                    <li><a href="#contact" data-scroll-nav="4">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -69,7 +69,7 @@
             </div>
         </div>
         <!-- Header Slider -->
-        <header class="header pos-re slider-fade" data-scroll-index="0">
+        <header id="home" class="header pos-re slider-fade" data-scroll-index="0">
             <div class="owl-carousel owl-theme">
                 <div class="item bg-img" data-overlay-dark="3" data-background="assets/img/slider/1.jpg">
                     <div class="container text-center v-middle caption">
@@ -80,7 +80,7 @@
                 </div>
                 <div class="item bg-img" data-overlay-dark="3" data-background="assets/img/slider/2.jpg">
                     <div class="container text-center v-middle caption">
-                        <h4>MONUMNETS</h4>
+                        <h4>MONUMENTS</h4>
                         <h1>MEMORIAL</h1>
                         <!--<a href="#" class="btn"><span>Discover More <i class="ti-arrow-right"></i></span></a>-->
                     </div>
@@ -95,7 +95,7 @@
             </div>
         </header>
          <!-- About -->
-         <section class="about mt-100 pb-100" data-scroll-index="2">
+         <section id="about" class="about mt-100 pb-100" data-scroll-index="2">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 mb-20">
@@ -124,43 +124,32 @@
             </div>
         </section>
         <!-- Services -->
-        <section class="services mt-100 pb-100" data-scroll-index="1">
+        <section id="services" class="services mt-100 pb-100" data-scroll-index="1">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 mb-20 text-center">
                         <h6 class="small-title">What We Do</h6>
                         <h4 class="title">Our Services</h4>
                     </div>
-                    <div class="col-md-4">
-                        <div class="item bg-1" onclick="location.href='project.html';">
-                            <img src="assets/img/granites/black-granite.jpg" alt="">
+                    <div class="col-md-6">
+                        <div class="item bg-1" onclick="location.href='kitchen.html';">
+                            <img src="assets/img/kitchen.jpg" alt="">
                             <div class="view-more">
                                 <span>View More</span>
                             </div>
                             <div class="con">
-                                <h5><a href="project.html">Black Granites</a></h5>
+                                <h5><a href="kitchen.html">Kitchen Granites</a></h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="item bg-1" onclick="location.href='project.html';">
-                            <img src="assets/img/granites/steel-grey-granite.jpg" alt="">
+                    <div class="col-md-6">
+                        <div class="item bg-1" onclick="location.href='monument.html';">
+                            <img src="assets/img/monument2.jpg" alt="">
                             <div class="view-more">
                                 <span>View More</span>
                             </div>
                             <div class="con">
-                                <h5><a href="project.html">Steel Gray Granites</a></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="item bg-1" onclick="location.href='project.html';">
-                            <img src="assets/img/granites/tan-brown-granite.jpg" alt="">
-                            <div class="view-more">
-                                <span>View More</span>
-                            </div>
-                            <div class="con">
-                                <h5><a href="project.html">Tan Brown Granites</a></h5>
+                                <h5><a href="monument.html">Monuments Granites</a></h5>
                             </div>
                         </div>
                     </div>
@@ -168,7 +157,7 @@
             </div>
         </section>
         <!-- Projects -->
-        <section class="projects mt-100 pb-100" data-scroll-index="3">
+        <section id="projects" class="projects mt-100 pb-100" data-scroll-index="3">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 mb-20 text-center">
@@ -235,7 +224,7 @@
                             <div class="item">
                                 <div class="team-img"> <img src="assets/img/team/1.jpg" alt="">
                                 </div>
-                                <h6>Matthew Adam</h6> <span>Managing Director</span>
+                                <h6>Siddharth</h6> <span>Managing Director</span>
                             </div>
                             <div class="item">
                                 <div class="team-img"> <img src="assets/img/team/2.jpg" alt="">
@@ -253,7 +242,7 @@
             </div>
         </section>
         <!-- Contact -->
-        <section class="contact mt-100 pb-100" data-scroll-index="4">
+        <section id="contact" class="contact mt-100 pb-100" data-scroll-index="4">
             <div class="container">
                 <div class="row text-center">
                     <div class="col-md-12 mb-20">
@@ -300,7 +289,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 offset-md-8">
-                        <p>&copy; 2022 PAG. ALL RIGHT RESERVED.</p>
+                        <p>&copy; <span id="year"></span> PAG. ALL RIGHT RESERVED.</p>
                     </div>
                 </div>
             </div>
