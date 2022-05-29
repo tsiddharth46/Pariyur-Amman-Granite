@@ -352,11 +352,12 @@ h6 {
 .services .item img {
     width: 100%;
     cursor: pointer;
+    max-height: 343px;
 }
 .services .item .view-more {
-    bottom: 50px;
+    bottom: 48px;
     color: #fff;
-    opacity: 0;
+    opacity: 1;
     cursor: pointer;
     text-align: center;
     position: relative;
@@ -638,6 +639,9 @@ h6 {
   overflow: hidden;
   margin: 0 auto 20px;
   position: relative;
+}
+.team h6 {
+    font-size: 24px;
 }
 .team .item 
 .team .item h6 {
